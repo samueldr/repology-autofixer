@@ -27,7 +27,7 @@ $problems.keys.sort.each do |key|
 		.map do |package|
 		# FIXME : This does not map to an attribute name, nor to a nixos file.
 		[
-			" *",
+			" * [ ]",
 			package["name"],
 			package["homepage"] ? "(#{package["homepage"]})" : "",
 			package["new_homepage"] ? " → (#{package["new_homepage"]})" : "",
