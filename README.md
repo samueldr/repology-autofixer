@@ -10,6 +10,8 @@ Do not expect much.
 
 Well, you shouldn't.
 
+### `fixer.rb`
+
 But first, you will need a packages.json from `unstable`.
 
 ```
@@ -29,3 +31,9 @@ $ ./fixer.rb
 Since you're using nix, and this script uses nix-shell and ruby, there's no
 dependencies to get, it is handled transparently.
 
+
+### `problems.rb`
+
+```
+$ ./problems.rb  | xclip
+```
