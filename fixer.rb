@@ -40,6 +40,8 @@ permanent_redirects.each do |package|
 		# hmmm... that's not elegant.
 		repo_cmd "sed", "-i", "-e", "s;#{$1};#{$2};g", file
 
+		next if file == "pkgs/development/haskell-modules/hackage-packages.nix"
+
 		# Do the git dance.
 		git "add", file
 		msg = <<~EOF
