@@ -1,8 +1,6 @@
 require "net/http"
 require "json"
 
-BRANCH_NAME = "repology/autofixer"
-
 module Repology
 	LINK_REGEX_PART = /([^"]+)/
 	QUOTED_LINK_REGEX_PART = /"#{LINK_REGEX_PART}"/
